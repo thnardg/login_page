@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="portrait">
+            <img src="https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="Abstract image">
+        </div>
+        <div class="login-form">
+            <h1>Welcome Back!</h1>
+            
+            <form class="login" method="get" action="login.php">
+            
+                <h2 class="login__sign-in">Sign In</h2>
+                
+                <div class="login__field">
+                    <i class='bx bxs-user-detail'></i>
+                    <input type="text" class="login__username" placeholder="Username">
+                </div>
+                
+                    <div class="login__field">
+                        <i class='bx bxs-lock-alt'></i>
+                        <input type="password" class="login__password" placeholder="Password">
+                </div>
+            
+                <a href="#" class="login__forgot-password">Forgot password?</a>
+
+                <a href="#" class="sign-in__button">Sign In</a>
+
+                    <div>
+                        <span class="sign-up__text">Don't have an account?</span>
+                        <span class="sign-up__link">Sign Up</span>
+                    </div>
+            </form>
+
+            <form class="create-account" method="get" action="login.php">
+            
+                <h2 class="login__sign-up">Create Account</h2>
+                
+                <div class="login__field">
+                    <i class='bx bxs-user-detail'></i>
+                    <input type="text" class="login__username" placeholder="Username" required>
+                </div>
+                
+                <div class="login__field">
+                    <i class='bx bx-at'></i>
+                    <input type="email" class="login__email" placeholder="Email" required>
+                </div>
+                
+                    <div class="login__field">
+                        <i class='bx bxs-lock-alt'></i>
+                        <input type="password" class="login__password" placeholder="Password" required>
+                </div>
+            
+                <a href="#" class="sign-in__button">Sign Up</a>
+
+                    <div>
+                        <span class="sign-up__text">Already have an Account?</span>
+                        <span class="sign-up__link">Sign In</span>
+                    </div>
+
+                    <i class='bx bxl-facebook-circle'></i>
+                    <i class='bx bxl-github'></i>
+                    <i class='bx bxl-twitter'></i>
+                    <i class='bx bxl-google'></i>
+            </form>
+        </div>
+    </div>
+
+<script src="main.js"></script>
+</body>
+</html>
