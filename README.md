@@ -1,2 +1,2 @@
-This is a beginner mini-project using only HTML and CSS to construct an New Login web page. <br>
-The goal is to practice placing, styling and aligning elements on a page. There's no Javascript and the links go nowhere, as this project does not aim to rebuild a fully working website, only the look and feel of a login page as best as I can.
+Simple minimalist login page with a "Sign In" and "Sign Up" option.
+<img src="#" alt="Login Page">
