@@ -1,0 +1,178 @@
+/* -- Google Fonts -- */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,700;0,900;1,300;1,900&display=swap');
+
+/* -- CSS Variables --*/
+:root {
+    /* -- Colors --*/
+    --dark-blue: #031BB8;
+    --medium-blue: #6096FD;
+    --light-blue: #AAB6FB;
+    --medium-pink: #FB7BBE;
+    --light-pink: #FAA7BB;
+    --light: #F1F1F1;
+
+    /* -- Typography -- */
+    --body-font: 'Nunito', sans-serif;
+    --big-font: 25px;
+    --medium-font: 15px;
+    --small-font: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    :root {
+        --medium-font: 15px;
+        --small-font: 10px;
+    }
+}
+
+/* -- Base -- */
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--body-font);
+    font-size: var(--medium-font);
+    color: var(--dark-blue);
+    font-weight: 300;
+}
+
+h2 {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* -- Login Section -- */
+.container /*login*/ {
+    display: grid;
+    grid-template-columns: 100%;
+    height: 100vh;
+    margin: 0;
+}
+
+.content /*login__content*/{
+    display: grid;
+    height: fit-content;
+}
+
+.portrait /*login__img*/ {
+    justify-self: center;
+    display: grid;
+}
+
+.portrait img {
+    width: 100vh;
+    margin-top: 0;
+    object-fit: cover;´
+}
+
+.login-form /*login__forms*/{
+    position: relative;
+    height: 368px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.login, .create-account /*login__registre / login__create*/ {
+    width: 100%;
+    background-color: var(--light);
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0px 8px 20px rgba(35, 0, 77, 0.2);    
+}
+
+.login__sign-in, .login__sign-up {
+    font-size: var(--big-font);
+    margin-bottom: 2rem;
+}
+
+.login__field {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    column-gap: .5rem;
+    padding: 1.125rem 1rem;
+    background-color: #FFF;
+    margin-top: 1rem;
+    border-radius: .5rem;
+}
+
+.social-media {
+    display: block;
+    padding: .5rem;
+    font-size:var(--big-font);
+    color:var(--medium-blue);
+}
+
+.login__username, .login__email, .login__password {
+    border: none;
+    outline: none;
+    font-size: var(--medium-font);
+    font-weight: 400;
+    color:var(--medium-pink)
+}
+
+.login__forgot-password {
+    display: block;
+    width: max-content;
+    margin-top: .5rem;
+    margin-left: auto;
+    font-size:var(--small-font);
+    font-weight: 700;
+    color:var(--light-blue);
+}
+
+.sign-in__button {
+    display: block;
+    padding: 1rem;
+    margin: 2rem 0;
+    background-color: var(--light-blue);
+    color: #FFF;
+    font-weight: 700;
+    text-align: center;
+    border-radius: .5rem;
+    transition: .3s;
+}
+
+.sign-up__text, .sign-up__link {
+    display: block;
+    font-weight: 700;
+    font-size: var(--medium-font);
+}
+
+.sign-up__link {
+    cursor: pointer;
+    color:var(--medium-pink);
+}
+
+.social-icon {
+    margin-left: .3rem;
+    margin-right: .3rem;
+}
+
+.block {
+    display: block;
+}
+
+.none {
+    display: none;
+}
+
+.signature {
+    display: grid;
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+}
