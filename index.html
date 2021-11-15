@@ -9,68 +9,85 @@
     <title>Login</title>
 </head>
 <body>
-    <div class="container">
-        <div class="portrait">
-            <img src="https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="Abstract image">
-        </div>
-        <div class="login-form">
-            <h1>Welcome Back!</h1>
-            
-            <form class="login" method="get" action="login.php">
-            
-                <h2 class="login__sign-in">Sign In</h2>
+    <!-- login -->
+    <div class="container"> 
+
+        <!-- login__content -->
+        <div class="content"> 
+
+            <div class="portrait">
+                <img src="https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80" alt="Abstract image">
+            </div>
+
+            <!-- login__forms -->
+            <div class="login-form">
+                <!-- login__registre / id: login-in -->            
+                <form class="login" method="get" action="login.php">
                 
-                <div class="login__field">
-                    <i class='bx bxs-user-detail'></i>
-                    <input type="text" class="login__username" placeholder="Username">
-                </div>
-                
+                    <h2 class="login__sign-in">Sign In</h2> <!--login title-->
+
+                    <!-- login__box -->            
+                    <div class="login__field">
+                        <i class='bx bxs-user-detail'></i>
+                        <input type="text" class="login__username" placeholder="Username">
+                    </div>
+
+                    <!-- login__box -->            
                     <div class="login__field">
                         <i class='bx bxs-lock-alt'></i>
                         <input type="password" class="login__password" placeholder="Password">
-                </div>
-            
-                <a href="#" class="login__forgot-password">Forgot password?</a>
+                    </div>
+                
+                    <a  class="login__forgot-password">Forgot password?</a>
 
-                <a href="#" class="sign-in__button">Sign In</a>
+                    <a  class="sign-in__button">Sign In</a>
 
                     <div>
                         <span class="sign-up__text">Don't have an account?</span>
                         <span class="sign-up__link">Sign Up</span>
                     </div>
-            </form>
+                </form>
 
-            <form class="create-account" method="get" action="login.php">
-            
-                <h2 class="login__sign-up">Create Account</h2>
+
+                <!-- login__create / id: login-up -->            
+                <form class="create-account none" method="get" action="login.php">
                 
-                <div class="login__field">
-                    <i class='bx bxs-user-detail'></i>
-                    <input type="text" class="login__username" placeholder="Username" required>
-                </div>
-                
-                <div class="login__field">
-                    <i class='bx bx-at'></i>
-                    <input type="email" class="login__email" placeholder="Email" required>
-                </div>
-                
+                    <h2 class="login__sign-up">Create Account</h2>
+                    
+                    <div class="login__field">
+                        <i class='bx bxs-user-detail'></i>
+                        <input type="text" class="login__username" placeholder="Username" required>
+                    </div>
+                    
+                    <div class="login__field">
+                        <i class='bx bx-at'></i>
+                        <input type="email" class="login__email" placeholder="Email" required>
+                    </div>
+                    
                     <div class="login__field">
                         <i class='bx bxs-lock-alt'></i>
                         <input type="password" class="login__password" placeholder="Password" required>
-                </div>
-            
-                <a href="#" class="sign-in__button">Sign Up</a>
+                    </div>
+                
+                    <a href="" class="sign-in__button">Sign Up</a>
+
+                    <div class="social-media">
+                        <a  class="social-icon"><i class='bx bxl-facebook-circle'></i></a>
+                        <a  class="social-icon"><i class='bx bxl-github'></i></a>
+                        <a  class="social-icon"><i class='bx bxl-twitter'></i></a>
+                        <a  class="social-icon"><i class='bx bxl-google'></i></a>
+                    </div>
 
                     <div>
                         <span class="sign-up__text">Already have an Account?</span>
                         <span class="sign-up__link">Sign In</span>
                     </div>
+                </form>
 
-                    <i class='bx bxl-facebook-circle'></i>
-                    <i class='bx bxl-github'></i>
-                    <i class='bx bxl-twitter'></i>
-                    <i class='bx bxl-google'></i>
-            </form>
+                <div class="signature">
+                    <p>Made by @thnardg</p>
+                </div>
+            </div>
         </div>
     </div>
 
