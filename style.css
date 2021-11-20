@@ -1,15 +1,15 @@
 /* -- Google Fonts -- */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,700;0,900;1,300;1,900&display=swap');
 
+
 /* -- CSS Variables --*/
 :root {
     /* -- Colors --*/
-    --dark-blue: #031BB8;
-    --medium-blue: #6096FD;
-    --light-blue: #AAB6FB;
-    --medium-pink: #FB7BBE;
-    --light-pink: #FAA7BB;
-    --light: #F1F1F1;
+    --background-color: #FFF;
+    --main-color: #333;
+    --icons: #bd2817;
+    --accents: #FF6B5B;
+    --accents-lighter: #ffe0d2;
 
     /* -- Typography -- */
     --body-font: 'Nunito', sans-serif;
@@ -35,16 +35,17 @@ body {
     padding: 0;
     font-family: var(--body-font);
     font-size: var(--medium-font);
-    color: var(--dark-blue);
+    color: var(--main-color);
+    background-color: var(--background-color);
     font-weight: 300;
 }
 
 h2 {
     margin: 0;
 }
+
 a {
     text-decoration: none;
-    
 }
 
 img {
@@ -53,20 +54,27 @@ img {
     display: block;
 }
 
+i {
+    color: var(--icons);
+    align-self: center;
+    opacity: 90%;
+}
+
+
 /* -- Login Section -- */
-.container /*login*/ {
+.container /*Entire Login/Create an Account box*/ {
     display: grid;
     grid-template-columns: 100%;
     height: 100vh;
     margin: 0;
 }
 
-.content /*login__content*/{
+.content /*Login Box*/{
     display: grid;
     height: fit-content;
 }
 
-.portrait /*login__img*/ {
+.portrait /*Main Image*/ {
     justify-self: center;
     display: grid;
     border-radius: 60%;
@@ -74,11 +82,11 @@ img {
 
 .portrait img {
     width: 100vh;
-    margin-top: 0;
+    margin-top: 3rem;
     object-fit: cover;´
 }
 
-.login-form /*login__forms*/{
+.login-form {
     position: relative;
     height: 368px;
     margin-left: 1.5rem;
@@ -86,17 +94,16 @@ img {
     margin-top: 1.5rem;
 }
 
-.login, .create-account /*login__registre / login__create*/ {
+.login, .create-account {
     position: absolute;
     width: 100%;
-    background-color: var(--light);
+    background-color: var(--background-color);
     padding: 2rem 1rem;
     border-radius: 1rem;
     text-align: center;
-    box-shadow: 0px 8px 20px rgba(35, 0, 77, 0.2);    
 }
 
-.login__sign-in, .login__sign-up {
+.login__sign-in, .login__sign-up /*Headers*/ {
     font-size: var(--big-font);
     margin-bottom: 2rem;
 }
@@ -106,24 +113,29 @@ img {
     grid-template-columns: max-content 1fr;
     column-gap: .5rem;
     padding: 1.125rem 1rem;
-    background-color: #FFF;
+    background-color: var(--background-color);
     margin-top: 1rem;
-    border-radius: .5rem;
+    border: 1px solid var(--accents-lighter);
+    border-radius: 1.5rem;
 }
 
-.social-media {
+.social-media /*Social Media Icons*/ {
     display: block;
     padding: .5rem;
     font-size:var(--big-font);
-    color:var(--medium-blue);
 }
 
-.login__username, .login__email, .login__password {
+.login__username, .login__email, .login__password /*Input fields*/{
     border: none;
     outline: none;
     font-size: var(--medium-font);
-    font-weight: 400;
-    color:var(--medium-pink)
+    color:var(--main-color)
+}
+
+.login__username:focus::-webkit-input-placeholder, .login__email:focus::-webkit-input-placeholder, .login__password:focus::-webkit-input-placeholder {
+    transition: text-indent 0.1s 0.1s ease; 
+    text-indent: -100%;
+    opacity: 1;
 }
 
 .login__forgot-password {
@@ -133,18 +145,19 @@ img {
     margin-left: auto;
     font-size:var(--small-font);
     font-weight: 700;
-    color:var(--light-blue);
+    color:var(--icons);
+    cursor: pointer;
 }
 
 .sign-in__button {
     display: block;
     padding: 1rem;
-    margin: 2rem 0;
-    background-color: var(--light-blue);
+    margin: 2rem 3rem;
+    background-color: var(--accents);
     color: #FFF;
     font-weight: 700;
     text-align: center;
-    border-radius: .5rem;
+    border-radius: 50px;
     transition: .3s;
 }
 
@@ -156,7 +169,7 @@ img {
 
 .sign-up__link, .sign-in__link {
     cursor: pointer;
-    color:var(--medium-pink);
+    color:var(--accents);
 }
 
 .social-icon {
