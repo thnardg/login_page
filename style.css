@@ -69,6 +69,7 @@ img {
 .portrait /*login__img*/ {
     justify-self: center;
     display: grid;
+    border-radius: 60%;
 }
 
 .portrait img {
@@ -86,6 +87,7 @@ img {
 }
 
 .login, .create-account /*login__registre / login__create*/ {
+    position: absolute;
     width: 100%;
     background-color: var(--light);
     padding: 2rem 1rem;
@@ -146,13 +148,13 @@ img {
     transition: .3s;
 }
 
-.sign-up__text, .sign-up__link {
+.sign-up__text, .sign-up__link, .sign-in__link {
     display: block;
     font-weight: 700;
     font-size: var(--medium-font);
 }
 
-.sign-up__link {
+.sign-up__link, .sign-in__link {
     cursor: pointer;
     color:var(--medium-pink);
 }
@@ -162,17 +164,14 @@ img {
     margin-right: .3rem;
 }
 
+/* Show Login */
 .block {
     display: block;
 }
 
+/* Show Sign-in */
 .none {
     display: none;
 }
 
-.signature {
-    display: grid;
-    position: relative;
-    text-align: center;
-    padding-top: 2rem;
-}
+/* -- MEDIA QUERIES -- */
