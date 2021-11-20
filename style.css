@@ -188,3 +188,17 @@ i {
 }
 
 /* -- MEDIA QUERIES -- */
+@media (min-width: 688px) {
+    .content {
+        max-width: 425px;
+        justify-self: center;
+    }
+}
+
+@media (min-width: 992px) {
+    .content {
+        min-width: 550px;
+        justify-self: center;
+        margin-top: 10px;
+    }
+}
